@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  verifier:
+    build: ./veraison/
+    ports:
+      - "8080:8080"
+    networks:
+      - net
+  relying-party:
+    build: ./psatoken/cmd/client/
+    environment:
+      - APIURL=http://verifier:8080/challenge-response/v1/newSession
+    networks:
+      - net
+
+networks:
+  net:
+    driver: bridge
