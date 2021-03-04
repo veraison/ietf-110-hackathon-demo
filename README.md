@@ -2,12 +2,14 @@
 
 Docker compose based Attester / Verifier environment based on veraison components.
 
-This demo is build using the following components:
+## Quick description
+
+This demo is built using the following components:
 * PSA attestation token package ([veraison/psatoken](https://github.com/veraison/psatoken))
 * Challenge-response HTTP API package ([veraison/apiclient](https://github.com/veraison/apiclient))
 * Various verifier related packages and HTTP API frontend ([veraison/veraison](https://github.com/veraison/veraison))
 
-## Instructions
+## Quick instructions
 
 * To start the verifier:
 ```
