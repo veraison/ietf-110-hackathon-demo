@@ -1,0 +1,6 @@
+[submodule "psatoken"]
+	path = psatoken
+	url = https://github.com/veraison/psatoken
+[submodule "veraison"]
+	path = veraison
+	url = https://github.com/veraison/veraison
